@@ -1,7 +1,12 @@
 /*Ini CSS*/
 
+body {
+    background-color: whitesmoke;
+}
+
 .main-header {
     text-align: center;
+
 }
 
 .selection-content {
@@ -15,28 +20,51 @@
     border-radius: 8px;
 }
 
-.bisque-color {
-    background-color: bisque;
+.darkkhaki-color {
+    background-color: darkkhaki;
 }
 
-.aqua-color {
-    background-color: white;
-}
 
 .luas-segitiga-header {
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0px;
-    background: cornflowerblue;
+    background: pink;
+    text-align: center;
+}
+
+.keliling-segitiga-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    background: rgb(144, 190, 241);
     text-align: center;
 }
 
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+.keliling-segitiga-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
 }
 
 .luas-segitiga-img {
+    background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.keliling-segitiga-img {
     background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
     height: 300px;
     width: 300px;
@@ -71,4 +99,29 @@ input[type=number], select {
 
 .main-content>aside {
     flex: 1;
+}
+#resetButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: rgb(155, 248, 248);
+    }
+
+}
+
+@media only screen and (max-width: 250px) {
+    body {
+        background: rgb(248, 230, 170);
+    }
+
 }

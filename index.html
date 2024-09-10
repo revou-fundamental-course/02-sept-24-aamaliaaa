@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="em">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator Segitiga</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 
 <body>
     <header class="main-header">
-        <h1>Welcome to Kalku</h1>
-        <p>Hai Sobat Selamat Datang di Kalku :)</p>
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, Selamat Datang di Kalkulator Matematik Segitiga :)</p>
     </header>
 
     <main>
         <section class="selection-content">
-            <button href="#" type="button" class="selection-button bisque-color">Segitiga</button>
-            <button href="#" type="button" class="selection-button aqua-color">Jajar Genjang</button>
+            <button type="button" class="selection-button darkkhaki-color">Segitiga</button>
         </section>
 
         <section class="main-content">
@@ -25,72 +24,78 @@
                 <header>
                     <h1 class="luas-segitiga-header">Luas Segitiga</h1>
                 </header>
-    
+
                 <article class="luas-segitiga-content">
                     <div class="luas-segitiga-img"></div>
                     <p>Rumus Luas Segitiga:</p>
+                    <p>L = 1/2 x Alas x Tinggi</p>
                 </article>
-    
+
                 <hr />
-    
-                <form>
+
+                <form id="formLuas">
                     <header>
                         <h1>Hitung Luas Segitiga</h1>
                     </header>
-    
+
                     <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas:</label>
-                        <input id="panjang-alas" type="number">
+                        <label for="alas">Panjang Alas:</label>
+                        <input id="alas" type="number">
                     </div>
                     <div class="input-wrapper">
                         <label for="tinggi">Tinggi:</label>
                         <input id="tinggi" type="number">
                     </div>
-    
-                    <p id="result">Hasil Perhitungan:</p>
-    
-                    <button>Hitung</button>
+
+                    <p id="resultLuas">Luas Segitiga adalah:</p>
+
+                    <button type="button" onclick="hitungLuas()">Hitung</button>
                 </form>
-    
             </aside>
-    
+
             <aside>
                 <header>
-                    <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+                    <h1 class="keliling-segitiga-header">Keliling Segitiga</h1>
                 </header>
-    
-                <article class="luas-segitiga-content">
-                    <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga:</p>
+
+                <article class="keliling-segitiga-content">
+                    <div class="keliling-segitiga-img"></div>
+                    <p>Rumus Keliling Segitiga:</p>
+                    <p> K = S1 + S2 + S3</p>
                 </article>
-    
+
                 <hr />
-    
-                <form>
+
+                <form id="formKeliling">
                     <header>
-                        <h1>Hitung Luas Segitiga</h1>
+                        <h1>Hitung Keliling Segitiga</h1>
                     </header>
-    
+
                     <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas:</label>
-                        <input id="panjang-alas" type="number">
+                        <label for="sisi1">Sisi 1:</label>
+                        <input id="sisi1" type="number">
                     </div>
                     <div class="input-wrapper">
-                        <label for="tinggi">Tinggi:</label>
-                        <input id="tinggi" type="number">
+                        <label for="sisi2">Sisi 2:</label>
+                        <input id="sisi2" type="number">
                     </div>
-    
-                    <p id="result">Hasil Perhitungan:</p>
-    
-                    <button>Hitung</button>
+                    <div class="input-wrapper">
+                        <label for="sisi3">Sisi 3:</label>
+                        <input id="sisi3" type="number">
+                    </div>
+
+                    <p id="resultKeliling">Keliling Segitiga adalah:</p>
+
+                    <button type="button" onclick="hitungKeliling()">Hitung</button>
                 </form>
-    
             </aside>
+
         </section>
-
-
     </main>
-</body>
 
+    <script src="js\script.js"></script>
+    <button type="button" id="resetButton">Reset</button>
+
+</body>
 
 </html>
