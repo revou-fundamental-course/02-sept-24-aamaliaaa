@@ -114,7 +114,7 @@ input[type=number], select {
 
 @media only screen and (max-width: 600px) {
     body {
-        background: rgb(155, 248, 248);
+        background: rgb(203, 247, 247);
     }
 
 }
