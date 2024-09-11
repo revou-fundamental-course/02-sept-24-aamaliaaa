@@ -1,7 +1,13 @@
 /*Ini CSS*/
 
+/* Hide sections by default */
+#parallelogramContent {
+    display: none;
+}
+
+/* Basic Style */
 body {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .main-header {
@@ -14,56 +20,57 @@ body {
     flex-direction: column;
 }
 
+/* Button Style */
 .selection-button {
     height: 32px;
     border: none;
     border-radius: 8px;
 }
 
-.darkkhaki-color {
-    background-color: darkkhaki;
+.bisque-color {
+    background-color: whitesmoke;
+}
+
+.aqua-color {
+    background-color:  whitesmoke;
+}
+
+/* Button style hover */
+#showTriangle:hover,
+#showParallelogram:hover {
+    background-color: pink ;
+}
+
+.jajargenjang-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section {
+    flex: 1;
+
 }
 
 
-.luas-segitiga-header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
-    background: pink;
-    text-align: center;
-}
-
+/* Triangle */
+.luas-segitiga-header,
 .keliling-segitiga-header {
     padding-top: 32px;
     padding-bottom: 32px;
     margin: 0px;
-    background: rgb(144, 190, 241);
+    background:  rgb(144, 190, 241);
     text-align: center;
 }
 
-.luas-segitiga-content {
+.luas-segitiga-content, 
+.keliling-segitiga-content{
     display: flex;
     flex-direction: column;
     text-align: center;
     font-weight: bold;
 }
 
-.keliling-segitiga-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: bold;
-}
-
-.luas-segitiga-img {
-    background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-    align-self: center;
-}
-
+.luas-segitiga-img,
 .keliling-segitiga-img {
     background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
     height: 300px;
@@ -73,6 +80,42 @@ body {
     align-self: center;
 }
 
+
+
+/* parallelogram */
+.luas-jajargenjang-header,
+.keliling-jajargenjang-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    background: rgb(144, 190, 241);
+    text-align: center;
+}
+
+.luas-jajargenjang-content, 
+.keliling-jajargenjang-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+.luas-jajargenjang-img,
+.keliling-jajargenjang-img {
+    background-image: url(https://awsimages.detik.net.id/community/media/visual/2021/09/20/jajar-genjang.jpeg?w=576);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto; 
+    width: 50%; 
+    overflow: hidden
+}
+
+/* Input */
 .input-wrapper {
     width: 50%;
     display: flex;
@@ -100,6 +143,8 @@ input[type=number], select {
 .main-content>aside {
     flex: 1;
 }
+
+/* Reset */
 #resetButton {
     position: fixed;
     bottom: 10px;
@@ -110,18 +155,22 @@ input[type=number], select {
     
 }
 
-
-
-@media only screen and (max-width: 600px) {
-    body {
-        background: rgb(203, 247, 247);
-    }
-
+#resetButton:hover {
+    background-color: pink;
 }
 
-@media only screen and (max-width: 250px) {
-    body {
-        background: rgb(248, 230, 170);
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
     }
-
+    .jajargenjang-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .luas-jajargenjang-img,
+    .keliling-jajargenjang-img {
+        width: 80%;
+    }
 }
