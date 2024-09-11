@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Segitiga</title>
+    <title>Kalkulator</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 
 <body>
     <header class="main-header">
         <h1>Welcome to Katik</h1>
-        <p>Hai Sobat, Selamat Datang di Kalkulator Matematik Segitiga :)</p>
+        <p>Hai Sobat, Selamat Datang di Kalkulator Matematik :)</p>
     </header>
 
     <main>
         <section class="selection-content">
-            <button type="button" class="selection-button darkkhaki-color">Segitiga</button>
+            <button type="button" class="selection-button aqua-color" id="showTriangle">Segitiga</button>
+            <button type="button" class="selection-button bisque-color" id="showParallelogram">Jajargenjang</button>
         </section>
 
-        <section class="main-content">
+        <!-- Left content triangle -->
+        <section class="main-content" id="triangleContent">
             <aside>
                 <header>
                     <h1 class="luas-segitiga-header">Luas Segitiga</h1>
@@ -39,8 +41,8 @@
                     </header>
 
                     <div class="input-wrapper">
-                        <label for="alas">Panjang Alas:</label>
-                        <input id="alas" type="number">
+                        <label for="panjang-alas">Panjang Alas:</label>
+                        <input id="panjang-alas" type="number">
                     </div>
                     <div class="input-wrapper">
                         <label for="tinggi">Tinggi:</label>
@@ -53,6 +55,7 @@
                 </form>
             </aside>
 
+            <!--Right content triangle-->
             <aside>
                 <header>
                     <h1 class="keliling-segitiga-header">Keliling Segitiga</h1>
@@ -90,7 +93,82 @@
                 </form>
             </aside>
 
+           
         </section>
+
+
+       
+        <!-- Left content parallelogram -->
+        <section class="jajargenjang-container" id="parallelogramContent">
+             <aside class="section">
+                <header>
+                    <h1 class="luas-jajargenjang-header">Luas Jajargenjang</h1>
+                </header>
+
+                <article class="luas-jajargenjang-content">
+                    <div class="luas-jajargenjang-img"></div>
+                    <p>Rumus Luas Jajargenjang :</p>
+                    <p> L = Alas x Tinggi</p>
+                </article>
+
+                <hr />
+
+                <form id="formLuas">
+                    <header>
+                        <h1>Hitung Luas Jajargenjang</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <label for="alas">Alas :</label>
+                        <input id="alas" type="number">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="tinggi2">Tinggi :</label>
+                        <input id="tinggi2" type="number">
+                    </div>
+
+                    <p id="resultLuas2">Luas Jajargenjang adalah:</p>
+
+                    <button type="button" onclick="Luas()">Hitung</button>
+                </form>
+            </aside>
+
+            <!-- Right content parallelogram -->
+            <aside class="section">
+                <header>
+                    <h1 class="keliling-jajargenjang-header">Keliling Jajargenjang</h1>
+                </header>
+
+                <article class="keliling-jajargenjang-content">
+                    <div class="keliling-jajargenjang-img"></div>
+                    <p>Rumus Keliling Jajargenjang :</p>
+                    <p> K = 2 x (a + b)</p>
+                </article>
+
+                <hr />
+
+                <form id="formKeliling">
+                    <header>
+                        <h1>Hitung Keliling Jajargenjang</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <label for="a"> Alas :</label>
+                        <input id="a" type="number">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="b">Sisi Miring :</label>
+                        <input id="b" type="number">
+                    </div>
+                    <p id="resultKeliling2">Keliling Jajargenjang adalah:</p>
+
+                    <button type="button" onclick="Keliling()">Hitung</button>
+                </form>
+            </aside>
+
+        </section>
+
+    
     </main>
 
     <script src="js\script.js"></script>
