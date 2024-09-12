@@ -2,12 +2,14 @@
 
 // Function to show the Triangle section
 function showTriangle() {
+    console.log('Triangle button Clicked');
     document.getElementById('triangleContent').style.display = 'flex';
     document.getElementById('parallelogramContent').style.display = 'none';
 }
 
 // Function to show the Parallelogram section
 function showParallelogram() {
+    console.log('Parallelogram button Clicked');
     document.getElementById('triangleContent').style.display = 'none';
     document.getElementById('parallelogramContent').style.display = 'flex';
 }
