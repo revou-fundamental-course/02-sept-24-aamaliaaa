@@ -1,4 +1,4 @@
-//ini js
+//ini javascript
 
 // Function to show the Triangle section
 function showTriangle() {
